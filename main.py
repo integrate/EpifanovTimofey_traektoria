@@ -15,6 +15,8 @@ def delete_tochka():
     for t in tochka:
         wrap.sprite.remove(t)
     tochka.clear()
+    spisok_pacman.clear()
+    spisok_celey_pacman.clear()
 
 
 def create_tochka(pos_x, pos_y):
@@ -68,3 +70,5 @@ def pacman2():
     if len(tochka) >= 1 and mod == "default":
         create_pacman()
 
+import wrap_py
+wrap_py.app.start()
